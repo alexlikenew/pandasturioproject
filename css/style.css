@@ -26,8 +26,8 @@ html {
 body {
   font-family: "Inter", "Open Sans";
   font-size: 1.6rem;
-  background-color: #0C0C0D;
-  color: #FAF7F2;
+  background-color: #0c0c0d;
+  color: #faf7f2;
 }
 
 a {
@@ -199,7 +199,7 @@ table {
   -webkit-text-fill-color: transparent;
 }
 .header__text-box__title--orange {
-  background: linear-gradient(180deg, #F98F1C 60%, rgba(153, 153, 153, 0.2) 89.06%);
+  background: linear-gradient(180deg, #f98f1c 60%, rgba(153, 153, 153, 0.2) 89.06%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -241,7 +241,7 @@ table {
 }
 .header__text-box__more-info__image img {
   max-width: 100%;
-  border: 1px solid #FAF7F2;
+  border: 1px solid #faf7f2;
   border-radius: 14px;
 }
 .header__text-box__more-info__image a {
@@ -273,7 +273,7 @@ table {
   max-height: 20rem;
   position: relative;
   max-width: 100%;
-  color: #0C0C0D;
+  color: #0c0c0d;
 }
 .transform-life__box__training a .transform-life__box__training__image-box img {
   max-width: 100%;
@@ -324,7 +324,7 @@ table {
 }
 .transform-life__box__training a .transform-life__box__training__text-box--massage h2,
 .transform-life__box__training a .transform-life__box__training__text-box--massage p {
-  color: #FAF7F2;
+  color: #faf7f2;
 }
 
 .services .wrapper {
@@ -377,12 +377,12 @@ table {
   width: 60%;
   font-size: 30px;
   font-weight: 700;
-  color: #FAF7F2;
+  color: #faf7f2;
   text-align: center;
 }
 .services__box__link__block__text {
   margin-top: 20px;
-  color: #FAF7F2;
+  color: #faf7f2;
 }
 .services__box__link__block__text p {
   line-height: 150%;
@@ -556,7 +556,7 @@ table {
   line-height: 150%;
 }
 .footer__info__right ul li .text__content {
-  color: #92949F;
+  color: #92949f;
 }
 .footer__rights {
   margin-top: 1.5rem;
