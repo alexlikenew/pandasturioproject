@@ -453,12 +453,12 @@ table {
 				border-radius: 20px;
 				&:hover {
 					.transform-life__box__training__image-box img {
-						max-width: 110%;
+						transform: scale(1.1);
 					}
 				}
 				.transform-life__box__training__image-box {
 					img {
-						transition: max-width 0.5s;
+						transition: transform 0.5s;
 						max-width: 100%;
 						z-index: 1;
 					}
