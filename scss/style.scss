@@ -60,6 +60,7 @@ body {
 	font-size: 1.6rem;
 	background-color: $main-color;
 	color: $lightest-gray;
+	position: relative;
 }
 a {
 	text-decoration: none;
@@ -89,6 +90,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+// section , footer{
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	padding: 16px 16px;
+}
 .nav {
 	position: absolute;
 	display: flex;
@@ -98,11 +109,6 @@ table {
 	width: 100%;
 	z-index: 1000;
 	background-color: rgba(0, 0, 0, 0);
-}
-.wrapper {
-	max-width: 1400px;
-	width: 100%;
-	padding: 16px 16px;
 }
 // NAVIGATION
 .navigation {
@@ -122,6 +128,61 @@ table {
 	}
 	&__desktop-menu {
 		display: none;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			list-style: none;
+			border: 1px solid #fafafa;
+			border-radius: 16px;
+			padding: 4px;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 4px 16px;
+
+				a {
+					cursor: pointer;
+					color: $lightest-gray;
+					font-size: clamp(16px, 0.938vw, 22px);
+					font-style: normal;
+					font-weight: 600;
+					line-height: 150%;
+					padding: 6px 12px;
+					text-transform: capitalize;
+					color: #fafafa;
+					display: flex;
+					align-items: center;
+					gap: clamp(18px, 1.25vw, 48px) !important;
+					position: relative;
+					transition: all all 0.3s ease-in-out;
+					border-radius: clamp(4px, 0.417vw, 16px);
+					transition: color 0.5s, background-color 0.5s;
+					&:hover {
+						background-color: $lightest-gray;
+						color: $main-color;
+					}
+				}
+				button {
+					border-radius: clamp(8px, 0.625vw, 24px);
+					border: 0;
+					padding: clamp(12px, 0.885vw, 12px) clamp(16px, 1.667vw, 20px);
+					z-index: 0;
+					-webkit-tap-highlight-color: transparent;
+					background-color: #d7fb00;
+					background-image: none;
+					color: #1e1f20;
+					cursor: pointer;
+					font-family: 'Inter', sans-serif;
+					font-size: clamp(16px, 0.938vw, 22px);
+					font-style: normal;
+					font-weight: 700;
+					line-height: 120%;
+					text-transform: uppercase;
+				}
+			}
+		}
 	}
 	&__mobile-menu {
 		display: none;
@@ -180,12 +241,16 @@ table {
 .header {
 	width: 100%;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-position: 50% 0;
 	background-size: 220%;
 	background-repeat: no-repeat;
 	position: relative;
 	// min-height: 500px;
 	background-image: url('../img/Fit-Squad-Personal-Trainer-Toronto-Mobile.jpg');
+	z-index: 1;
 	.wrapper {
 		height: 100%;
 		position: relative;
@@ -262,6 +327,15 @@ table {
 			font-weight: 700;
 			line-height: 120%;
 			text-transform: uppercase;
+			z-index: 1000;
+			&:hover {
+				color: $medium-black;
+
+				.text {
+					-webkit-animation: move-up-alternate 0.3s forwards;
+					animation: move-up-alternate 0.3s forwards;
+				}
+			}
 		}
 		&__more-info {
 			position: absolute;
@@ -272,8 +346,10 @@ table {
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: center;
+			z-index: 1;
 			&__image {
 				max-width: 20%;
+				position: relative;
 				img {
 					max-width: 100%;
 					border: 1px solid #faf7f2;
@@ -281,8 +357,8 @@ table {
 				}
 				a {
 					position: absolute;
-					top: -12px;
-					left: 0;
+					top: -14px;
+					left: -14px;
 					z-index: 10;
 					img {
 						border: none;
@@ -309,15 +385,17 @@ table {
 			justify-content: space-between;
 			align-items: center;
 			a {
+				max-width: 100%;
+				max-height: 100%;
+				overflow: hidden;
 				margin-top: 4rem;
 				max-height: 20rem;
 				position: relative;
-				max-width: 100%;
 				color: $main-color;
+				border-radius: 20px;
 				.transform-life__box__training__image-box {
 					img {
 						max-width: 100%;
-						border-radius: 20px;
 						z-index: 1;
 					}
 				}
@@ -375,9 +453,9 @@ table {
 }
 // SERVICES
 .services {
-	.wrapper {
-		padding: 10px 16px;
-	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	&__heading {
 		display: flex;
 		align-items: center;
@@ -442,6 +520,9 @@ table {
 }
 // REVIEWS
 .testimonials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	&__heading {
 		display: flex;
 		flex-direction: column;
@@ -504,6 +585,9 @@ table {
 }
 // CONTACT
 .footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	.wrapper {
 		padding: 30px 16px;
 	}
@@ -632,5 +716,177 @@ table {
 			font-weight: 700;
 			color: $green-color;
 		}
+	}
+}
+// 578px
+@media (min-width: 576px) {
+	.header__text-box__title--training,
+	.header__text-box__title--massage {
+		font-size: 26px;
+	}
+
+	.header__text-box {
+		h2 {
+			font-size: 66px;
+		}
+	}
+
+	.services {
+		&__box {
+			&__link {
+				width: 100%;
+				&__block {
+					&__title {
+						max-height: 120px;
+
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						&__image {
+							max-height: 100%;
+							img {
+								max-height: 120px;
+							}
+						}
+						&__heading {
+							font-size: 38px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer__social {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.footer__social__images {
+		width: auto;
+	}
+}
+// 768px
+@media (min-width: 768px) {
+	.header {
+		background-size: 148%;
+	}
+
+	.header__text-box__title--training,
+	.header__text-box__title--massage {
+		font-size: 32px;
+	}
+	.header__text-box {
+		h2 {
+			font-size: 76px;
+		}
+	}
+
+	.transform-life {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__box {
+			&__training {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				a {
+					max-width: 45%;
+				}
+			}
+		}
+	}
+
+	.services__heading {
+		padding: 6rem 1rem;
+		h3 {
+			font-size: 3.8rem;
+		}
+	}
+}
+// 992px
+@media (min-width: 992px) {
+	// NAVIGATION
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+	}
+	.burger-btn {
+		display: none;
+	}
+	.navigation__desktop-menu {
+		display: flex;
+	}
+	// NAVIGATION
+
+	.header {
+		background-size: 110%;
+	}
+	.header__text-box__title--training,
+	.header__text-box__title--massage {
+		font-size: 38px;
+	}
+	.header__text-box {
+		h2 {
+			font-size: 80px;
+		}
+	}
+
+	.services__box__link__block {
+		flex-direction: row;
+	}
+
+	.testimonials__heading {
+		h2 {
+			font-size: 4.2rem;
+		}
+	}
+	.footer__info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.footer__info__left {
+		width: 40%;
+	}
+	.footer__info__right {
+		width: 40%;
+	}
+}
+// 1200 px
+@media (min-width: 1200px) {
+	.header {
+		background-size: 100%;
+	}
+	.header__text-box__title--training,
+	.header__text-box__title--massage {
+		font-size: 42px;
+	}
+	.header__text-box {
+		h2 {
+			font-size: 100px;
+		}
+	}
+	.header__text-box__more-info {
+		right: 5rem;
+		align-items: flex-end;
+		flex-direction: column;
+		p {
+			font-family: 'Poppins', sans-serif;
+			font-size: clamp(16px, 0.938vw, 22px);
+			padding: 10px;
+		}
+	}
+	.wrapper {
+		width: 100%;
+		padding: 16px 32px;
+	}
+
+	.testimonials__box {
+		flex-direction: row;
+	}
+	.testimonials__box__text {
+		padding: 3rem 3rem;
 	}
 }
