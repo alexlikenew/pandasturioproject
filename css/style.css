@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
 @font-face {
   font-family: "Nexa";
   font-style: normal;
@@ -132,14 +133,11 @@ table {
   color: #0c0c0d;
 }
 .navigation__desktop-menu ul li button {
-  border-radius: clamp(8px, 0.625vw, 24px);
-  border: 0;
+  position: relative;
   padding: clamp(12px, 0.885vw, 12px) clamp(16px, 1.667vw, 20px);
   z-index: 0;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #d7fb00;
+  background-color: transparent;
   background-image: none;
-  color: #1e1f20;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: clamp(16px, 0.938vw, 22px);
@@ -147,6 +145,41 @@ table {
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
+  position: relative;
+  border-color: transparent;
+}
+.navigation__desktop-menu ul li button::before, .navigation__desktop-menu ul li button::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  content: "";
+}
+.navigation__desktop-menu ul li button::before {
+  width: 100%;
+  left: 0;
+  border-radius: 20px;
+  background-color: #d1fd08;
+  z-index: -1;
+}
+.navigation__desktop-menu ul li button::after {
+  width: 0;
+  left: 50%;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.navigation__desktop-menu ul li button:hover {
+  color: #d1fd08;
+}
+.navigation__desktop-menu ul li button:hover::before {
+  transform: scale(0, 1);
+}
+.navigation__desktop-menu ul li button:hover::after {
+  width: 100%;
+  border-color: #d1fd08;
+  transition-delay: 0.2s;
 }
 .navigation__mobile-menu {
   display: none;
@@ -266,16 +299,13 @@ table {
   margin-top: 1rem;
   color: #d1fd08;
 }
-.header__text-box__button {
-  margin: 3rem 0;
-  border-radius: clamp(8px, 0.625vw, 24px);
-  border: 0;
-  padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
+.header__text-box button {
+  position: relative;
+  margin-top: 2rem;
+  padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
   z-index: 0;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #d7fb00;
+  background-color: transparent;
   background-image: none;
-  color: #1e1f20;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: clamp(16px, 0.938vw, 22px);
@@ -283,7 +313,42 @@ table {
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
+  position: relative;
+  border-color: transparent;
   z-index: 1000;
+}
+.header__text-box button::before, .header__text-box button::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  content: "";
+}
+.header__text-box button::before {
+  width: 100%;
+  left: 0;
+  border-radius: 20px;
+  background-color: #d1fd08;
+  z-index: -1;
+}
+.header__text-box button::after {
+  width: 0;
+  left: 50%;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.header__text-box button:hover {
+  color: #d1fd08;
+}
+.header__text-box button:hover::before {
+  transform: scale(0, 1);
+}
+.header__text-box button:hover::after {
+  width: 100%;
+  border-color: #d1fd08;
+  transition-delay: 0.2s;
 }
 .header__text-box__more-info {
   position: absolute;
@@ -339,7 +404,11 @@ table {
   color: #0c0c0d;
   border-radius: 20px;
 }
+.transform-life__box__training a:hover .transform-life__box__training__image-box img {
+  max-width: 110%;
+}
 .transform-life__box__training a .transform-life__box__training__image-box img {
+  transition: max-width 0.5s;
   max-width: 100%;
   z-index: 1;
 }
@@ -373,9 +442,9 @@ table {
   padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
   z-index: 0;
   -webkit-tap-highlight-color: transparent;
-  background-color: #1e1f20;
+  background-color: #0c0c0d;
   background-image: none;
-  color: #fafafa;
+  color: #faf7f2;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: clamp(16px, 0.938vw, 22px);
@@ -384,6 +453,12 @@ table {
   line-height: 120%;
   margin: 1rem 0;
   text-transform: uppercase;
+  transition: color 0.5s, background-color 0.5s;
+}
+.transform-life__box__training a .transform-life__box__training__text-box button:hover,
+.transform-life__box__training a .transform-life__box__training__text-box--massage button:hover {
+  background-color: #faf7f2;
+  color: #0c0c0d;
 }
 .transform-life__box__training a .transform-life__box__training__text-box--massage h2,
 .transform-life__box__training a .transform-life__box__training__text-box--massage p {
@@ -416,6 +491,12 @@ table {
   align-items: center;
   padding: 20px 0;
 }
+.services__box__link:hover .services__box__link__block__title__image {
+  transform: translateX(50px);
+}
+.services__box__link:hover .services__box__link__block__title__heading {
+  color: #d1fd08;
+}
 .services__box__link__block {
   display: flex;
   flex-direction: column;
@@ -432,6 +513,7 @@ table {
 }
 .services__box__link__block__title__image {
   width: 40%;
+  transition: transform 0.5s;
   color: #d7fb00;
 }
 .services__box__link__block__title__image img {
@@ -444,6 +526,7 @@ table {
   font-weight: 700;
   color: #faf7f2;
   text-align: center;
+  transition: color 0.5s;
 }
 .services__box__link__block__text {
   margin-top: 20px;
@@ -498,14 +581,11 @@ table {
   line-height: 150%;
 }
 .testimonials__box__text button {
-  border-radius: clamp(8px, 0.625vw, 24px);
-  border: 0;
+  position: relative;
   padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
   z-index: 0;
-  -webkit-tap-highlight-color: transparent;
-  background-color: #d7fb00;
+  background-color: transparent;
   background-image: none;
-  color: #1e1f20;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-size: clamp(16px, 0.938vw, 22px);
@@ -513,6 +593,41 @@ table {
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
+  position: relative;
+  border-color: transparent;
+}
+.testimonials__box__text button::before, .testimonials__box__text button::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  content: "";
+}
+.testimonials__box__text button::before {
+  width: 100%;
+  left: 0;
+  border-radius: 20px;
+  background-color: #d1fd08;
+  z-index: -1;
+}
+.testimonials__box__text button::after {
+  width: 0;
+  left: 50%;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.testimonials__box__text button:hover {
+  color: #d1fd08;
+}
+.testimonials__box__text button:hover::before {
+  transform: scale(0, 1);
+}
+.testimonials__box__text button:hover::after {
+  width: 100%;
+  border-color: #d1fd08;
+  transition-delay: 0.2s;
 }
 
 .footer {
@@ -699,7 +814,7 @@ table {
     align-items: center;
   }
   .transform-life__box__training a {
-    max-width: 45%;
+    max-width: 48%;
   }
   .services__heading {
     padding: 6rem 1rem;
@@ -748,6 +863,11 @@ table {
   }
 }
 @media (min-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1600px;
+    padding: 16px 32px;
+  }
   .header {
     background-size: 100%;
   }
@@ -768,9 +888,9 @@ table {
     font-size: clamp(16px, 0.938vw, 22px);
     padding: 10px;
   }
-  .wrapper {
-    width: 100%;
-    padding: 16px 32px;
+  .services__heading {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(38px, 2.292vw, 61px);
   }
   .testimonials__box {
     flex-direction: row;
