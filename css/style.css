@@ -236,11 +236,10 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: 50% 0;
-  background-size: 220%;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url("../img/Fit-Squad-Personal-Trainer-Toronto-Mobile.jpg");
+  background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.jpg");
   z-index: 1;
 }
 .header .wrapper {
@@ -382,6 +381,9 @@ table {
 .header__text-box__more-info p {
   max-width: 70%;
 }
+.header__text-box__more-info p span {
+  color: #d1fd08;
+}
 
 .transform-life .wrapper {
   padding: 40px 16px;
@@ -403,6 +405,7 @@ table {
   position: relative;
   color: #0c0c0d;
   border-radius: 20px;
+  color: #faf7f2;
 }
 .transform-life__box__training a:hover .transform-life__box__training__image-box img {
   transform: scale(1.1);
@@ -546,7 +549,7 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
 }
 .testimonials__heading p {
   color: #d1fd08;
@@ -693,6 +696,14 @@ table {
   width: clamp(18px, 1.667vw, 64px);
   height: clamp(18px, 1.667vw, 64px);
 }
+.footer__social__images ul li a:hover {
+  background-color: #d1fd08;
+  color: #0c0c0d;
+  box-shadow: 0 0 15px #d1fd08;
+}
+.footer__social__images ul li a:hover svg path {
+  fill: #0c0c0d;
+}
 .footer__info__left {
   padding: 16px 0;
   display: flex;
@@ -738,6 +749,9 @@ table {
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer__info__right ul li .text:hover {
+  color: #d1fd08;
+}
 .footer__info__right ul li .text__title {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -758,6 +772,12 @@ table {
 }
 
 @media (min-width: 576px) {
+  .header {
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.jpg");
+    background-position: left;
+  }
   .header__text-box__title--training,
   .header__text-box__title--massage {
     font-size: 26px;
@@ -793,7 +813,11 @@ table {
 }
 @media (min-width: 768px) {
   .header {
-    background-size: 148%;
+    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie.jpeg");
+    background-size: 110%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
   .header__text-box__title--training,
   .header__text-box__title--massage {
@@ -869,7 +893,10 @@ table {
     padding: 16px 32px;
   }
   .header {
+    background-origin: border-box;
+    background-repeat: no-repeat;
     background-size: 100%;
+    background-position: 0 20%;
   }
   .header__text-box__title--training,
   .header__text-box__title--massage {
@@ -897,5 +924,18 @@ table {
   }
   .testimonials__box__text {
     padding: 3rem 3rem;
+  }
+  .footer__social__text p {
+    font-size: clamp(13px, 0.729vw, 19px);
+  }
+  .footer__social__text h2 {
+    font-size: clamp(42px, 2.865vw, 100px);
+  }
+  .footer__info__left p,
+  .footer__info__right p {
+    font-size: clamp(16px, 0.938vw, 22px);
+  }
+  .footer__info__right {
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
