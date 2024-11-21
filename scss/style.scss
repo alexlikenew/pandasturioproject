@@ -544,7 +544,7 @@ table {
 		&__link {
 			&:hover {
 				.services__box__link__block__title__image {
-					transform: translateX(50px);
+					transform: translateX(10px);
 				}
 				.services__box__link__block__title__heading {
 					color: $green-color;
@@ -967,7 +967,14 @@ table {
 	.services__box__link__block {
 		flex-direction: row;
 	}
-
+	.services__box__link{
+		&:hover {
+			.services__box__link__block__title__image {
+				transform: translateX(40px);
+			}
+			
+		}
+	}
 	.testimonials__heading {
 		h2 {
 			font-size: 4.2rem;
