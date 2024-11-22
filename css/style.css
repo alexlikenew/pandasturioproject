@@ -75,8 +75,7 @@ table {
   align-items: center;
   justify-content: center;
   z-index: 9999999;
-  background: #1E1F20;
-  transition: opacity 0.5s;
+  background: #1e1f20;
 }
 
 #preloader .preloader {
@@ -102,7 +101,7 @@ table {
   top: 0;
   left: 0;
   position: absolute;
-  border: 1px solid #D7FB00;
+  border: 1px solid #d7fb00;
   pointer-events: none;
   animation: preloader 1.5s linear infinite;
 }

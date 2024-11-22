@@ -101,56 +101,55 @@ table {
 	align-items: center;
 	justify-content: center;
 	z-index: 9999999;
-	background: #1E1F20;
-	transition: opacity .5s;
-  }
-  #preloader .preloader {
+	background: #1e1f20;
+}
+#preloader .preloader {
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  }
-  #preloader .preloader__box {
+}
+#preloader .preloader__box {
 	width: 120px;
 	height: 120px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-  }
-  #preloader .preloader__box span {
+}
+#preloader .preloader__box span {
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	position: absolute;
-	border: 1px solid #D7FB00;
+	border: 1px solid #d7fb00;
 	pointer-events: none;
 	animation: preloader 1.5s linear infinite;
-  }
-  #preloader .preloader__box span:nth-of-type(1) {
+}
+#preloader .preloader__box span:nth-of-type(1) {
 	border-radius: 48% 52% 68% 32%/46% 40% 60% 54%;
 	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.829), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.829);
-  }
-  #preloader .preloader__box span:nth-of-type(2) {
+}
+#preloader .preloader__box span:nth-of-type(2) {
 	animation-direction: reverse;
 	border-radius: 27% 73% 64% 36%/69% 39% 61% 31%;
 	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.5), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.5);
-  }
-  #preloader .preloader__box span:nth-of-type(3) {
+}
+#preloader .preloader__box span:nth-of-type(3) {
 	animation-duration: 3s;
 	border-radius: 58% 42% 30% 70%/38% 59% 41% 62%;
 	box-shadow: 0px 0px 10px 0px rgba(213, 251, 0, 0.7), inset 0px 0px 10px 0px rgba(213, 251, 0, 0.7);
-  }
-  @keyframes preloader {
+}
+@keyframes preloader {
 	0% {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
+}
 // NAVIGATION
 .nav {
 	position: absolute;
@@ -1026,19 +1025,18 @@ table {
 	.services__box__link__block {
 		flex-direction: row;
 	}
-	.services__box__link{
+	.services__box__link {
 		&:hover {
 			.services__box__link__block__title__image {
 				transform: translateX(40px);
 			}
-			
 		}
 	}
 
-	.services__box__link__block__title{
+	.services__box__link__block__title {
 		width: 50%;
 	}
-	.services__box__link__block__text{
+	.services__box__link__block__text {
 		width: 50%;
 	}
 	.testimonials__heading {
