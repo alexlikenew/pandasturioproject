@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +16,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
     <!-- Navigation -->
     <nav class="nav">
         <div class="wrapper">
             <!-- Navigation -->
             <div class="navigation">
                 <!-- Logo -->
-                <a href="" class="navigation__logo">
+                <a href="index.html" class="navigation__logo">
                     <img class="navigation__logo__panda" src="img/pandastuio_logo_png.png" alt="Logo niedzwiedzia">
                     <img src="img/pandastudio_logo_text_png.png" alt="Logo FIT">
                 </a>
@@ -40,54 +39,78 @@
                 <!-- Desktop navigation -->
                 <div class="navigation__desktop-menu">
                     <ul class="navigation__desktop-menu__ul">
-                        <li class="current"><a href="">Cennik</a></li>
-                        <li><a href="">Zarezerwuj</a></li>
-                        <li><a href="">Oferta</a></li>
-                        <li><a href="">Studio</a></li>
-                        <li><a href="">Kontakt</a></li>
+                        <li class="current"><a href="">Zarezerwuj</a>
+                        </li>
+                        <li><a href="trening.html">Trening</a></li>
+                        <li><a href="masaz.html">Masaż</a></li>
+                        <li><a href="studio.html">Studio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
                         <li><button class="text">SPRÓBUJ!</button></li>
                     </ul>
                 </div>
                 <!-- Mobile navigation -->
                 <div class="navigation__mobile-menu">
                     <ul class="navigation__mobile-menu__ul">
-                        <li><a href="">Cennik</a></li>
-                        <li><a href="">Zarezerwuj</a></li>
-                        <li><a href="">Oferta</a></li>
-                        <li><a href="">Studio</a></li>
-                        <li><a href="">Kontakt</a></li>
+                        <li><a href="">Zarezerwuj</a>
+                        </li>
+                        <li><a href="trening.html">Trening</a></li>
+                        <li><a href="masaz.html">Masaż</a></li>
+                        <li><a href="studio.html">Studio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
                         <li><button class="text">Nacisnij</button></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Header -->
-    <header class="header">
-        <div class="bg-box"></div>
+
+    <!-- Section Training Pricing -->
+    <section class="testimonials testimonials--training">
         <div class="wrapper">
-            <div class="header__text-box">
-                <h4 class="header__text-box__title--training">TRENING</h4>
-                <h4 class="header__text-box__title--massage">MASAŻ</h4>
-                <h2 class="header__text-box__title">UWOLNIJ</h2>
-                <h2 class="header__text-box__title header__text-box__title--green">SPORTOWCA</h2>
-                <h2 class="header__text-box__title">ZRELAKSUJ</h2>
-                <h2 class="header__text-box__title header__text-box__title--orange">UMYSŁ</h2>
-                <button class="header__text-box__button">SPRÓBUJ TERAZ</button>
-                <div class="header__text-box__more-info">
-                    <div class="header__text-box__more-info__image">
-                        <img src="./img/panda_studio_more-info.png" alt="Ikonka informacji szczegowolych">
-                        <a href="">
-                            <img src="./img/panda_studio-play-icon.png" alt="Przycisk odtwarzania">
-                        </a>
-                    </div>
-                    <p>Moje studio to miejsce, gdzie <span>pasja</span> do fitnessu spotyka się z
-                        <span>profesjonalizmem</span>.</p>
-                </div>
+            <div class="testimonials__heading">
+                <p>Cennik treningów </p>
+                <h2>Zarezerwuj swój trening</h2>
             </div>
+
+            <div class="pricing-section">
+                
+                          <div class="pricing-box">
+                            <div class="pricing-box__title">Trening personalny</div>
+                            <ul class="pricing-box__ul">
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">1 trening 60min - 150zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 4 treningów - 560zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 8 treningów - 1080zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 12 treningów - 1560zł</li>
+                            </ul>
+                            <div class="pricing-box__button " ><button>Zarezerwuj</button></div>
+                          </div>
+                
+                          <div class="pricing-box">
+                            <div class="pricing-box__title">Trening w parach</div>
+                            <ul class="pricing-box__ul">
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">1 trening 60min - 220zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 4 treningów - 840zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 8 treningów - 1640zł</li>
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 12 treningów - 2400zł</li>
+                            </ul>
+                            <div class="pricing-box__button " ><button>Zarezerwuj</button></div>
+                          </div>
+                
+                          <div class="pricing-box">
+                            <div class="pricing-box__title">Zajęcia w małych grupach</div>
+                            <ul class="pricing-box__ul">
+                                <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Wejście na zajęcia 70zł (cena stała)</li>
+                            </ul>
+                            <div class="pricing-box__button " ><button>Zarezerwuj</button></div>
+                          </div>
+
+
+            </div>
+
+          
         </div>
-    </header>
-      
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="wrapper">
@@ -177,6 +200,3 @@
 </body>
 
 </html>
-
-
-

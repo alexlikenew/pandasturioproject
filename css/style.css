@@ -76,6 +76,7 @@ table {
   justify-content: center;
   z-index: 9999999;
   background: #1e1f20;
+  transition: opacity 1.5s;
 }
 
 #preloader .preloader {
@@ -502,6 +503,10 @@ table {
   margin-top: 1rem;
   font-size: 19px;
 }
+.transform-life__box__training a .transform-life__box__training__text-box p span,
+.transform-life__box__training a .transform-life__box__training__text-box--massage p span {
+  font-weight: 900;
+}
 .transform-life__box__training a .transform-life__box__training__text-box button,
 .transform-life__box__training a .transform-life__box__training__text-box--massage button {
   border-radius: clamp(8px, 0.625vw, 24px);
@@ -608,6 +613,9 @@ table {
   justify-content: center;
   align-items: center;
 }
+.testimonials--masaz, .testimonials--training {
+  padding-top: 20rem;
+}
 .testimonials__heading {
   display: flex;
   flex-direction: column;
@@ -692,6 +700,115 @@ table {
   transform: scale(0, 1);
 }
 .testimonials__box__text button:hover::after {
+  width: 100%;
+  border-color: #d1fd08;
+  transition-delay: 0.2s;
+}
+
+.testimonials--training {
+  padding-top: 10rem;
+}
+.testimonials .wrapper .pricing-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .wrapper .pricing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: clamp(20px, 2.5vw, 64px) clamp(12px, 1.25vw, 32px);
+  border-radius: clamp(18px, 1.25vw, 48px);
+  border: 1px solid #92949f;
+}
+.testimonials .wrapper .pricing-box__title {
+  color: #d1fd08;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 0.938vw, 28px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d1fd08;
+  text-align: center;
+}
+.testimonials .wrapper .pricing-box__ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .wrapper .pricing-box__ul__li {
+  width: 100%;
+  padding: 2rem;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 0.938vw, 22px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.testimonials .wrapper .pricing-box__ul__li img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+.testimonials .wrapper .pricing-box button {
+  position: relative;
+  margin-top: 2rem;
+  padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
+  z-index: 0;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(16px, 0.938vw, 22px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: relative;
+  border-color: transparent;
+  z-index: 1000;
+}
+.testimonials .wrapper .pricing-box button::before, .testimonials .wrapper .pricing-box button::after {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  content: "";
+}
+.testimonials .wrapper .pricing-box button::before {
+  width: 100%;
+  left: 0;
+  border-radius: 20px;
+  background-color: #d1fd08;
+  z-index: -1;
+}
+.testimonials .wrapper .pricing-box button::after {
+  width: 0;
+  left: 50%;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.testimonials .wrapper .pricing-box button:hover {
+  color: #d1fd08;
+}
+.testimonials .wrapper .pricing-box button:hover::before {
+  transform: scale(0, 1);
+}
+.testimonials .wrapper .pricing-box button:hover::after {
   width: 100%;
   border-color: #d1fd08;
   transition-delay: 0.2s;
@@ -957,6 +1074,14 @@ table {
   }
   .footer__info__right {
     width: 40%;
+  }
+  .testimonials .wrapper .pricing-box {
+    width: 30%;
+  }
+  .testimonials .wrapper .pricing-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 }
 @media (min-width: 1200px) {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -27,7 +28,7 @@
             <!-- Navigation -->
             <div class="navigation">
                 <!-- Logo -->
-                <a href="" class="navigation__logo">
+                <a href="index.html" class="navigation__logo">
                     <img class="navigation__logo__panda" src="img/pandastuio_logo_png.png" alt="Logo niedzwiedzia">
                     <img src="img/pandastudio_logo_text_png.png" alt="Logo FIT">
                 </a>
@@ -40,54 +41,128 @@
                 <!-- Desktop navigation -->
                 <div class="navigation__desktop-menu">
                     <ul class="navigation__desktop-menu__ul">
-                        <li class="current"><a href="">Cennik</a></li>
-                        <li><a href="">Zarezerwuj</a></li>
-                        <li><a href="">Oferta</a></li>
-                        <li><a href="">Studio</a></li>
-                        <li><a href="">Kontakt</a></li>
+                        <li class="current"><a href="">Zarezerwuj</a>
+                        </li>
+                        <li><a href="trening.html">Trening</a></li>
+                        <li><a href="masaz.html">Masaż</a></li>
+                        <li><a href="studio.html">Studio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
                         <li><button class="text">SPRÓBUJ!</button></li>
                     </ul>
                 </div>
                 <!-- Mobile navigation -->
                 <div class="navigation__mobile-menu">
                     <ul class="navigation__mobile-menu__ul">
-                        <li><a href="">Cennik</a></li>
-                        <li><a href="">Zarezerwuj</a></li>
-                        <li><a href="">Oferta</a></li>
-                        <li><a href="">Studio</a></li>
-                        <li><a href="">Kontakt</a></li>
+                        <li><a href="">Zarezerwuj</a>
+                        </li>
+                        <li><a href="trening.html">Trening</a></li>
+                        <li><a href="masaz.html">Masaż</a></li>
+                        <li><a href="studio.html">Studio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
                         <li><button class="text">Nacisnij</button></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Header -->
-    <header class="header">
-        <div class="bg-box"></div>
+
+
+
+
+    <!-- Section Testimonials -->
+    <section class="testimonials testimonials--masaz">
         <div class="wrapper">
-            <div class="header__text-box">
-                <h4 class="header__text-box__title--training">TRENING</h4>
-                <h4 class="header__text-box__title--massage">MASAŻ</h4>
-                <h2 class="header__text-box__title">UWOLNIJ</h2>
-                <h2 class="header__text-box__title header__text-box__title--green">SPORTOWCA</h2>
-                <h2 class="header__text-box__title">ZRELAKSUJ</h2>
-                <h2 class="header__text-box__title header__text-box__title--orange">UMYSŁ</h2>
-                <button class="header__text-box__button">SPRÓBUJ TERAZ</button>
-                <div class="header__text-box__more-info">
-                    <div class="header__text-box__more-info__image">
-                        <img src="./img/panda_studio_more-info.png" alt="Ikonka informacji szczegowolych">
-                        <a href="">
-                            <img src="./img/panda_studio-play-icon.png" alt="Przycisk odtwarzania">
-                        </a>
-                    </div>
-                    <p>Moje studio to miejsce, gdzie <span>pasja</span> do fitnessu spotyka się z
-                        <span>profesjonalizmem</span>.</p>
+            <div class="testimonials__heading">
+                <!-- <p>W y p o c z y n e k </p> -->
+                <h2>Masaż</h2>
+            </div>
+            <div class="testimonials__box">
+                <div class="testimonials__box__image">
+                    <img src="./img/panda-masaz-ivan-mishchenko-section-masaz.jpg" alt="Zdjecie silowni Fit Panda Studio">
+                </div>
+                <div class="testimonials__box__text">
+                    <h2>Witamy w naszym Studiu Masażu</h2>
+                    <p>W kameralnej i przytulnej przestrzeni naszego studia oferujemy profesjonalne masaże, które
+                        wspierają regenerację, relaks i profilaktykę zdrowia. Masaż to nie tylko chwila wytchnienia, ale
+                        przede wszystkim inwestycja w zdrowie Twojego ciała i umysłu.</p>
+                    <p>
+                        Zapraszamy do świata, gdzie troska o Twoją formę i samopoczucie jest naszym priorytetem.</p>
+                    <button>Zarezerwuj</button>
                 </div>
             </div>
         </div>
-    </header>
-      
+    </section>
+    <!-- Section Massage types -->
+    <section class="services">
+        <div class="wrapper">
+            <!-- Services Heading -->
+            <div class="services__heading">
+                <h3><span>Nasza oferta </span> </h3>
+            </div>
+            <!-- Services box section -->
+            <div class="services__box">
+                <!-- Block 1 -->
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="services__box__link">
+                    <div class="services__box__link__block">
+                        <div class="services__box__link__block__title">
+                            <div class="services__box__link__block__title__image"><img
+                                    src="./img/masaz_leczniczy.jpg" alt="Masaż leczniczy"></div>
+                            <div class="services__box__link__block__title__heading">Masaż leczniczy</div>
+                        </div>
+                        <div class="services__box__link__block__text">
+                            <p>Skierowany na rozwiązywanie problemów związanych z bólem i dyskomfortem w ciele. Pomaga w niwelowaniu napięć i przywracaniu sprawności układu ruchu. Doskonały dla osób zmagających się z urazami czy przewlekłymi dolegliwościami.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Block 2 -->
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="services__box__link">
+                    <div class="services__box__link__block">
+                        <div class="services__box__link__block__title">
+                            <div class="services__box__link__block__title__image"><img
+                                    src="./img/masaze-sportowe-kontuzje.jpg" alt="Masaż sportowy">
+                            </div>
+                            <div class="services__box__link__block__title__heading">Masaż sportowy</div>
+                        </div>
+                        <div class="services__box__link__block__text">
+                            <p>Idealny dla osób aktywnych fizycznie, wspomaga regenerację po treningach, poprawia wydolność i pomaga zapobiegać kontuzjom. To nieodzowny element zdrowego trybu życia każdego sportowca.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Block 3 -->
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="services__box__link">
+                    <div class="services__box__link__block">
+                        <div class="services__box__link__block__title">
+                            <div class="services__box__link__block__title__image"><img
+                                    src="./img/masazach-relaksacyjny.jpg" alt="Masaż relaksacyjny"></div>
+                            <div class="services__box__link__block__title__heading">Masaż relaksacyjny</div>
+                        </div>
+                        <div class="services__box__link__block__text">
+                            <p>Chwila absolutnego spokoju i odprężenia. Redukuje stres, poprawia jakość snu i pozwala zyskać nową energię do codziennych wyzwań.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Block 4 -->
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="services__box__link">
+                    <div class="services__box__link__block">
+                        <div class="services__box__link__block__title">
+                            <div class="services__box__link__block__title__image"><img
+                                    src="./img//masaz_klasyczny.jpg" alt="Masaż klasyczny">
+                            </div>
+                            <div class="services__box__link__block__title__heading">Masaż klasyczny</div>
+                        </div>
+                        <div class="services__box__link__block__text">
+                            <p>Uniwersalna technika, która łączy elementy relaksu i terapii, poprawiając krążenie, elastyczność mięśni oraz ogólną kondycję ciała.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
         <div class="wrapper">
@@ -177,6 +252,3 @@
 </body>
 
 </html>
-
-
-
