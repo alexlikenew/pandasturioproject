@@ -21,6 +21,42 @@
 </head>
 
 <body>
+    <dialog id="dialogOne">
+
+        <div class="dialogOne__info">
+            <div class="dialogOne__info__training">
+                <h2>Trening</h2>
+                <img class="showElement" src="./img/panda_studio_spalania.png" alt="Dziewczyna trenuje Crossfit">
+                <div class="text">
+                    <p class="text__title">Address:</p>
+                    <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                            35-242</a></p>
+                </div>
+                <div class="text">
+                    <p class="text__title">Telefon:</p>
+                    <a class="text__content" href="tel:729729729">694 906 749</a>
+                </div>
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="btn-reservation">Zarezerwuj</a>
+            </div>
+            <div class="showElement dialogOne__info__line"></div>
+            <div class="dialogOne__info__massage">
+                <h2>Masaż</h2>
+                <img class="showElement" src="./img/panda_studio_massage_mini_268.jpg" alt="Zdjecie masazu mezczyzny">
+                <div class="text">
+                    <p class="text__title">Address:</p>
+                    <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                            35-242</a></p>
+                </div>
+                <div class="text">
+                    <p class="text__title">Telefon:</p>
+                    <a class="text__content" href="tel:729729729">694 906 749</a>
+                </div>
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="btn-reservation">Zarezerwuj</a>
+            </div>
+        </div>
+        <button class="closeDialog ">Zamknij</button>
+       
+    </dialog>
     <!-- Preloader -->
     <!-- <div id="preloader" >
         <div class="loader">
@@ -56,7 +92,7 @@
                         <li><a href="masaz.html">Masaż</a></li>
                         <li><a href="studio.html">Studio</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
-                        <li><button class="text">SPRÓBUJ!</button></li>
+                        <li><button data-dialog="dialogOne"  class="text">SPRÓBUJ!</button></li>
                     </ul>
                 </div>
                 <!-- Mobile navigation -->
@@ -85,7 +121,7 @@
                 <h2 class="header__text-box__title header__text-box__title--green">SPORTOWCA</h2>
                 <h2 class="header__text-box__title">ZRELAKSUJ</h2>
                 <h2 class="header__text-box__title header__text-box__title--orange">UMYSŁ</h2>
-                <button class="header__text-box__button">SPRÓBUJ TERAZ</button>
+                <button data-dialog="dialogOne" class="header__text-box__button">SPRÓBUJ TERAZ</button>
                 <div class="header__text-box__more-info">
                     <div class="header__text-box__more-info__image">
                         <img src="./img/panda_studio_more-info.png" alt="Ikonka informacji szczegowolych">
@@ -103,6 +139,7 @@
                 </div>
             </div>
         </div>
+
     </header>
     <!-- Section Transform Your Life -->
     <section class="transform-life">
@@ -338,7 +375,7 @@
                             </div>
                             <div class="text">
                                 <p class="text__title">Telefon:</p>
-                                <a class="text__content" href="tel:729729729">729-729-729</a>
+                                <a class="text__content" href="tel:729729729">694 906 749</a>
                             </div>
                         </li>
                         <li>

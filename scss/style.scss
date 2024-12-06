@@ -119,6 +119,165 @@ table {
 		transform: rotate(360deg);
 	}
 }
+// MODAL WINDOW
+
+dialog {
+	max-width: 1000px;
+	width: 90%;
+	padding: 30px 30px 70px 30px;
+	border: 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	border: 1px solid $light-gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $main-color;
+	color: $lightest-gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.showElement{
+		display: none;
+	}
+	.dialogOne__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		&__line{
+			display: none;
+			height: 30rem;
+			width: 1px;
+			background-color: $green-color;
+		}
+		&__training,
+		&__massage {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			h2 {
+				font-weight: 700;
+				font-size: 5rem;
+				color: #d1fd08;
+			}
+			img{
+				margin: 2rem 0;
+				max-width: 100%;
+							border-radius: 40px;
+			}
+			.text {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				gap: 0.5rem;
+				&:hover {
+					color: $green-color;
+				}
+				&__title {
+					font-family: 'Poppins', sans-serif;
+					font-size: 1.6rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%;
+				}
+				&__content {
+					color: $light-gray;
+					a {
+						color: $light-gray;
+					}
+				}
+			}
+		}
+	}
+}
+dialog[open] {
+	animation: fadein 0.3s ease-in forwards;
+  }
+  
+  @keyframes fadein{
+	0%{
+	  opacity:0;
+	}
+	100%{
+	  opacity:1;
+
+	}}
+dialog .closeDialog {
+	position: relative;
+	margin-top: 2rem;
+	&::before {
+		width: 100%;
+		left: 0;
+		border-radius: 20px;
+		background-color: $light-gray;
+		z-index: -1;
+	}
+	
+}
+dialog button , dialog .btn-reservation {
+	position: relative;
+	padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
+	margin-top: 1rem;
+	z-index: 0;
+	background-color: transparent;
+	background-image: none;
+	cursor: pointer;
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(16px, 0.938vw, 22px);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+	text-transform: uppercase;
+
+	border-color: transparent;
+	z-index: 1000;
+	// color: #fff;
+	&::before,
+	&::after {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		transition: all 0.3s;
+		content: '';
+	}
+	&::before {
+		width: 100%;
+		left: 0;
+		border-radius: 20px;
+		background-color: $green-color;
+		z-index: -1;
+	}
+	&::after {
+		width: 0;
+		left: 50%;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		transform: translate(-50%, 0);
+		z-index: 1;
+	}
+	&:hover {
+		color: $green-color;
+		&::before {
+			transform: scale(0, 1);
+		}
+		&::after {
+			width: 100%;
+			border-color: $green-color;
+			transition-delay: 0.2s;
+		}
+	}
+}
+dialog .btn-reservation{
+	color: $main-color;
+}
 // NAVIGATION
 .nav {
 	position: absolute;
@@ -1179,6 +1338,21 @@ table {
 		justify-content: space-evenly;
 		align-items: flex-start;
 	}
+	dialog .dialogOne__info{
+	flex-direction: row;
+	gap: 10rem;
+	
+	dialog{
+		width: auto;
+	}
+}
+dialog .showElement{
+	display: block;
+}
+.hideElement{
+	display: none;
+}
+
 }
 //MEDIA QUERIES 1200 px +
 @media (min-width: 1200px) {
