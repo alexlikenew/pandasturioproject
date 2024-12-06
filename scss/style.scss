@@ -616,6 +616,9 @@ table {
 					color: $lightest-gray;
 					p {
 						line-height: 150%;
+						span {
+							font-weight: 900;
+						}
 					}
 				}
 			}
@@ -630,6 +633,18 @@ table {
 	&--masaz,
 	&--training {
 		padding-top: 20rem;
+	}
+	&--masaz--second {
+		padding-top: 5rem;
+		.testimonials__heading h2 {
+			padding-top: 5rem;
+			border-top: 1px solid $green-color;
+		}
+		.testimonials__box__text p {
+			span {
+				font-weight: 900;
+			}
+		}
 	}
 	&__heading {
 		display: flex;
@@ -670,7 +685,7 @@ table {
 				line-height: 150%;
 			}
 
-			button {
+			a {
 				position: relative;
 				padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
 				z-index: 0;
@@ -685,6 +700,8 @@ table {
 				text-transform: uppercase;
 				position: relative;
 				border-color: transparent;
+				color: $main-color;
+				text-align: center;
 				// color: #fff;
 				&::before,
 				&::after {
@@ -841,7 +858,6 @@ table {
 		}
 	}
 }
-
 // FOOTER
 .footer {
 	display: flex;
@@ -973,6 +989,9 @@ table {
 						}
 						&__content {
 							color: $light-gray;
+							a {
+								color: $light-gray;
+							}
 						}
 					}
 				}
@@ -1155,7 +1174,7 @@ table {
 	.testimonials .wrapper .pricing-box {
 		width: 30%;
 	}
-	.testimonials .wrapper .pricing-section{
+	.testimonials .wrapper .pricing-section {
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: flex-start;

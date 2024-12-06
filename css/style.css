@@ -607,6 +607,9 @@ table {
 .services__box__link__block__text p {
   line-height: 150%;
 }
+.services__box__link__block__text p span {
+  font-weight: 900;
+}
 
 .testimonials {
   display: flex;
@@ -615,6 +618,16 @@ table {
 }
 .testimonials--masaz, .testimonials--training {
   padding-top: 20rem;
+}
+.testimonials--masaz--second {
+  padding-top: 5rem;
+}
+.testimonials--masaz--second .testimonials__heading h2 {
+  padding-top: 5rem;
+  border-top: 1px solid #d1fd08;
+}
+.testimonials--masaz--second .testimonials__box__text p span {
+  font-weight: 900;
 }
 .testimonials__heading {
   display: flex;
@@ -655,7 +668,7 @@ table {
   font-weight: 400;
   line-height: 150%;
 }
-.testimonials__box__text button {
+.testimonials__box__text a {
   position: relative;
   padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
   z-index: 0;
@@ -670,22 +683,24 @@ table {
   text-transform: uppercase;
   position: relative;
   border-color: transparent;
+  color: #0c0c0d;
+  text-align: center;
 }
-.testimonials__box__text button::before, .testimonials__box__text button::after {
+.testimonials__box__text a::before, .testimonials__box__text a::after {
   height: 100%;
   position: absolute;
   top: 0;
   transition: all 0.3s;
   content: "";
 }
-.testimonials__box__text button::before {
+.testimonials__box__text a::before {
   width: 100%;
   left: 0;
   border-radius: 20px;
   background-color: #d1fd08;
   z-index: -1;
 }
-.testimonials__box__text button::after {
+.testimonials__box__text a::after {
   width: 0;
   left: 50%;
   border-top: 1px solid transparent;
@@ -693,13 +708,13 @@ table {
   transform: translate(-50%, 0);
   z-index: 1;
 }
-.testimonials__box__text button:hover {
+.testimonials__box__text a:hover {
   color: #d1fd08;
 }
-.testimonials__box__text button:hover::before {
+.testimonials__box__text a:hover::before {
   transform: scale(0, 1);
 }
-.testimonials__box__text button:hover::after {
+.testimonials__box__text a:hover::after {
   width: 100%;
   border-color: #d1fd08;
   transition-delay: 0.2s;
@@ -941,6 +956,9 @@ table {
   line-height: 150%;
 }
 .footer__info__right ul li .text__content {
+  color: #92949f;
+}
+.footer__info__right ul li .text__content a {
   color: #92949f;
 }
 .footer__rights {
