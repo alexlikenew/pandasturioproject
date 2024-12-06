@@ -119,6 +119,39 @@ table {
 		transform: rotate(360deg);
 	}
 }
+
+// TITLE BANER
+.title-baner-massage{
+	background: url('/img/title-baner-massage.jpg') no-repeat;
+}
+.title-baner-training{
+	background: url('/img/title-banner.png') no-repeat;
+}
+.title-baner-training , .title-baner-massage {
+	background-position: center;
+	background-size: cover;
+	height: calc(clamp(140px, 15.26vw, 280px) + clamp(64px, 5.573vw, 220px));
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-family: 'Nexa', sans-serif;
+		font-size: clamp(48px, 6.25vw, 160px);
+		font-style: normal;
+		font-weight: 900;
+		line-height: 130%;
+		letter-spacing: -3.6px;
+		background: linear-gradient(180deg, #fafafa 68%, rgba(153, 153, 153, 0.3) 85%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-transform: capitalize;
+		padding-top: clamp(48px, 5vw, 150px);
+	}
+}
+
 // MODAL WINDOW
 
 dialog {
@@ -139,7 +172,7 @@ dialog {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	.showElement{
+	.showElement {
 		display: none;
 	}
 	.dialogOne__info {
@@ -148,7 +181,7 @@ dialog {
 		justify-content: center;
 		align-items: center;
 		gap: 3rem;
-		&__line{
+		&__line {
 			display: none;
 			height: 30rem;
 			width: 1px;
@@ -160,16 +193,16 @@ dialog {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			
+
 			h2 {
 				font-weight: 700;
 				font-size: 5rem;
 				color: #d1fd08;
 			}
-			img{
+			img {
 				margin: 2rem 0;
 				max-width: 100%;
-							border-radius: 40px;
+				border-radius: 40px;
 			}
 			.text {
 				display: flex;
@@ -200,16 +233,16 @@ dialog {
 }
 dialog[open] {
 	animation: fadein 0.3s ease-in forwards;
-  }
-  
-  @keyframes fadein{
-	0%{
-	  opacity:0;
-	}
-	100%{
-	  opacity:1;
+}
 
-	}}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 dialog .closeDialog {
 	position: relative;
 	margin-top: 2rem;
@@ -220,9 +253,9 @@ dialog .closeDialog {
 		background-color: $light-gray;
 		z-index: -1;
 	}
-	
 }
-dialog button , dialog .btn-reservation {
+dialog button,
+dialog .btn-reservation {
 	position: relative;
 	padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
 	margin-top: 1rem;
@@ -275,7 +308,7 @@ dialog button , dialog .btn-reservation {
 		}
 	}
 }
-dialog .btn-reservation{
+dialog .btn-reservation {
 	color: $main-color;
 }
 // NAVIGATION
@@ -789,7 +822,10 @@ dialog .btn-reservation{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&--masaz,
+	&--masaz{
+		padding-top: 8rem;
+
+	}
 	&--training {
 		padding-top: 20rem;
 	}
@@ -1338,21 +1374,20 @@ dialog .btn-reservation{
 		justify-content: space-evenly;
 		align-items: flex-start;
 	}
-	dialog .dialogOne__info{
-	flex-direction: row;
-	gap: 10rem;
-	
-	dialog{
-		width: auto;
-	}
-}
-dialog .showElement{
-	display: block;
-}
-.hideElement{
-	display: none;
-}
+	dialog .dialogOne__info {
+		flex-direction: row;
+		gap: 10rem;
 
+		dialog {
+			width: auto;
+		}
+	}
+	dialog .showElement {
+		display: block;
+	}
+	.hideElement {
+		display: none;
+	}
 }
 //MEDIA QUERIES 1200 px +
 @media (min-width: 1200px) {

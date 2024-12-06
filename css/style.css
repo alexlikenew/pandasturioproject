@@ -132,6 +132,39 @@ table {
     transform: rotate(360deg);
   }
 }
+.title-baner-massage {
+  background: url("/img/title-baner-massage.jpg") no-repeat;
+}
+
+.title-baner-training {
+  background: url("/img/title-banner.png") no-repeat;
+}
+
+.title-baner-training, .title-baner-massage {
+  background-position: center;
+  background-size: cover;
+  height: calc(clamp(140px, 15.26vw, 280px) + clamp(64px, 5.573vw, 220px));
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-baner-training h1, .title-baner-massage h1 {
+  font-family: "Nexa", sans-serif;
+  font-size: clamp(48px, 6.25vw, 160px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 130%;
+  letter-spacing: -3.6px;
+  background: linear-gradient(180deg, #fafafa 68%, rgba(153, 153, 153, 0.3) 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  padding-top: clamp(48px, 5vw, 150px);
+}
+
 dialog {
   max-width: 1000px;
   width: 90%;
@@ -232,7 +265,8 @@ dialog .closeDialog::before {
   z-index: -1;
 }
 
-dialog button, dialog .btn-reservation {
+dialog button,
+dialog .btn-reservation {
   position: relative;
   padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
   margin-top: 1rem;
@@ -249,21 +283,25 @@ dialog button, dialog .btn-reservation {
   border-color: transparent;
   z-index: 1000;
 }
-dialog button::before, dialog button::after, dialog .btn-reservation::before, dialog .btn-reservation::after {
+dialog button::before, dialog button::after,
+dialog .btn-reservation::before,
+dialog .btn-reservation::after {
   height: 100%;
   position: absolute;
   top: 0;
   transition: all 0.3s;
   content: "";
 }
-dialog button::before, dialog .btn-reservation::before {
+dialog button::before,
+dialog .btn-reservation::before {
   width: 100%;
   left: 0;
   border-radius: 20px;
   background-color: #d1fd08;
   z-index: -1;
 }
-dialog button::after, dialog .btn-reservation::after {
+dialog button::after,
+dialog .btn-reservation::after {
   width: 0;
   left: 50%;
   border-top: 1px solid transparent;
@@ -271,13 +309,16 @@ dialog button::after, dialog .btn-reservation::after {
   transform: translate(-50%, 0);
   z-index: 1;
 }
-dialog button:hover, dialog .btn-reservation:hover {
+dialog button:hover,
+dialog .btn-reservation:hover {
   color: #d1fd08;
 }
-dialog button:hover::before, dialog .btn-reservation:hover::before {
+dialog button:hover::before,
+dialog .btn-reservation:hover::before {
   transform: scale(0, 1);
 }
-dialog button:hover::after, dialog .btn-reservation:hover::after {
+dialog button:hover::after,
+dialog .btn-reservation:hover::after {
   width: 100%;
   border-color: #d1fd08;
   transition-delay: 0.2s;
@@ -771,7 +812,10 @@ dialog .btn-reservation {
   justify-content: center;
   align-items: center;
 }
-.testimonials--masaz, .testimonials--training {
+.testimonials--masaz {
+  padding-top: 8rem;
+}
+.testimonials--training {
   padding-top: 20rem;
 }
 .testimonials--masaz--second {

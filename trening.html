@@ -20,6 +20,40 @@
 </head>
 
 <body>
+    <!-- <dialog id="dialogOne">
+        <div class="dialogOne__info">
+            <div class="dialogOne__info__training">
+                <h2>Trening</h2>
+                <img class="showElement" src="./img/panda_studio_spalania.png" alt="Dziewczyna trenuje Crossfit">
+                <div class="text">
+                    <p class="text__title">Address:</p>
+                    <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                            35-242</a></p>
+                </div>
+                <div class="text">
+                    <p class="text__title">Telefon:</p>
+                    <a class="text__content" href="tel:729729729">694 906 749</a>
+                </div>
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="btn-reservation">Zarezerwuj</a>
+            </div>
+            <div class="showElement dialogOne__info__line"></div>
+            <div class="dialogOne__info__massage">
+                <h2>Masaż</h2>
+                <img class="showElement" src="./img/panda_studio_massage_mini_268.jpg" alt="Zdjecie masazu mezczyzny">
+                <div class="text">
+                    <p class="text__title">Address:</p>
+                    <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                            35-242</a></p>
+                </div>
+                <div class="text">
+                    <p class="text__title">Telefon:</p>
+                    <a class="text__content" href="tel:729729729">694 906 749</a>
+                </div>
+                <a href="https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow" class="btn-reservation">Zarezerwuj</a>
+            </div>
+        </div>
+        <button class="closeDialog ">Zamknij</button>
+    </dialog> -->
     <!-- Navigation -->
     <nav class="nav">
         <div class="wrapper">
@@ -64,6 +98,13 @@
         </div>
     </nav>
 
+    <!-- Section Title baner -->
+<section class="title-baner-training">
+    <div>
+        <h1>Cennik</h1>
+    </div>
+</section>
+
     <!-- Section Training Pricing -->
     <section class="testimonials testimonials--training">
         <div class="wrapper">
@@ -86,7 +127,7 @@
                         <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 12 treningów -
                             1560zł</li>
                     </ul>
-                    <div class="pricing-box__button "><button>Zarezerwuj</button></div>
+                    <div class="pricing-box__button "><button data-dialog="dialogOne">Zarezerwuj</button></div>
                 </div>
 
                 <div class="pricing-box">
@@ -101,7 +142,7 @@
                         <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Pakiet 12 treningów -
                             2400zł</li>
                     </ul>
-                    <div class="pricing-box__button "><button>Zarezerwuj</button></div>
+                    <div class="pricing-box__button "><button data-dialog="dialogOne">Zarezerwuj</button></div>
                 </div>
 
                 <div class="pricing-box">
@@ -110,7 +151,7 @@
                         <li class="pricing-box__ul__li"><img src="img/check-mark.png" alt="">Wejście na zajęcia 70zł
                             (cena stała)</li>
                     </ul>
-                    <div class="pricing-box__button "><button>Zarezerwuj</button></div>
+                    <div class="pricing-box__button "><button data-dialog="dialogOne">Zarezerwuj</button></div>
                 </div>
 
 
