@@ -1116,8 +1116,6 @@ dialog .btn-reservation {
   border: 0;
   padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
   z-index: 0;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
   background-color: #d7fb00;
   background-image: none;
   color: #1e1f20;
