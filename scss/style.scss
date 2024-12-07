@@ -121,13 +121,15 @@ table {
 }
 
 // TITLE BANER
-.title-baner-massage{
+.title-baner-massage {
 	background: url('/img/title-baner-massage.jpg') no-repeat;
 }
-.title-baner-training{
+.title-baner-training {
 	background: url('/img/title-banner.png') no-repeat;
 }
-.title-baner-training , .title-baner-massage {
+
+.title-baner-training,
+.title-baner-massage {
 	background-position: center;
 	background-size: cover;
 	height: calc(clamp(140px, 15.26vw, 280px) + clamp(64px, 5.573vw, 220px));
@@ -822,9 +824,8 @@ dialog .btn-reservation {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&--masaz{
+	&--masaz {
 		padding-top: 8rem;
-
 	}
 	&--training {
 		padding-top: 20rem;
@@ -1050,6 +1051,109 @@ dialog .btn-reservation {
 					}
 				}
 			}
+		}
+	}
+}
+// SECTION CONTACT
+.contact {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.wrapper{
+		max-width: 1600px;
+		width: 100%;
+		padding: 16px 16px;
+	}
+	padding-top: 2rem;
+	&__info {
+		h2 {
+			font-weight: 700;
+			margin-bottom: 8px;
+			color: $green-color;
+		}
+		p {
+			font-family: 'Poppins', sans-serif;
+			font-size: clamp(16px, 0.938vw, 22px);
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+		}
+		&__details {
+			padding-top: 3rem;
+		}
+	}
+	&__form {
+		margin-top: 5rem;
+		padding: clamp(16px, 1.667vw, 48px);
+		border: 1px solid #92949f;
+		border-radius: clamp(18px, 1.25vw, 48px);
+		background: #1e1f20;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+		h2 {
+			font-weight: 700;
+			margin-bottom: 8px;
+			color: $green-color;
+		}
+		p {
+			font-family: 'Poppins', sans-serif;
+			font-size: clamp(16px, 0.938vw, 22px);
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+		}
+		.form-control {
+			padding: clamp(12px, 1.042vw, 24px) clamp(16px, 1.25vw, 40px);
+			border-radius: clamp(8px, 0.625vw, 24px);
+			border: 0.5px solid #92949f;
+			background: #1e1f20;
+			font-family: 'Poppins', sans-serif;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 150%;
+			position: relative;
+			color: #fafafa;
+			box-shadow: none;
+			width: 100%;
+		}
+		&__input-block {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 3rem;
+			margin-top: 2rem;
+		}
+		&__input-block svg {
+			position: absolute;
+			top: 13px;
+			right: clamp(16px, 1.25vw, 32px);
+		}
+		button {
+			margin-top: 3rem;
+			border-radius: clamp(8px, 0.625vw, 24px);
+			border: 0;
+			padding: clamp(12px, 0.885vw, 24px) clamp(16px, 1.667vw, 48px);
+			z-index: 0;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-appearance: button;
+			background-color: #d7fb00;
+			background-image: none;
+			color: #1e1f20;
+			cursor: pointer;
+			font-family: 'Inter', sans-serif;
+			font-size: clamp(16px, 0.938vw, 22px);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 120%;
+			
+			text-transform: uppercase;
 		}
 	}
 }
@@ -1388,6 +1492,22 @@ dialog .btn-reservation {
 	.hideElement {
 		display: none;
 	}
+// CONTACT
+.contact{
+	.wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		.contact__info{
+			width: 45%;
+		}
+		.contact__form{
+			width: 45%;
+		}
+
+	}
+}
 }
 //MEDIA QUERIES 1200 px +
 @media (min-width: 1200px) {
@@ -1449,6 +1569,9 @@ dialog .btn-reservation {
 		p {
 			font-size: clamp(16px, 0.938vw, 22px);
 		}
+	}
+	.footer__info__right ul li .text__title{
+		font-size: clamp(16px, 0.938vw, 22px);
 	}
 	.footer__info__right {
 		align-items: center;
