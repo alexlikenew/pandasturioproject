@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Inter', 'Open Sans';
+	font-size: 1.6rem;
+	background-color: $main-color;
+	color: $lightest-gray;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+img {
+	height: auto;
+}
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+button {
+	border: none;
+	cursor: pointer;
+}
+textarea {
+	resize: vertical;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+	padding: 16px 16px;
+}
