@@ -373,7 +373,7 @@ dialog .btn-reservation {
   align-items: center;
   padding: 4px 16px;
 }
-.navigation__desktop-menu ul li a {
+.navigation__desktop-menu ul li a, .navigation__desktop-menu ul li span {
   cursor: pointer;
   color: #faf7f2;
   font-size: clamp(16px, 0.938vw, 22px);
@@ -391,7 +391,7 @@ dialog .btn-reservation {
   border-radius: clamp(4px, 0.417vw, 16px);
   transition: color 0.5s, background-color 0.5s;
 }
-.navigation__desktop-menu ul li a:hover {
+.navigation__desktop-menu ul li a:hover, .navigation__desktop-menu ul li span:hover {
   background-color: #faf7f2;
   color: #0c0c0d;
 }
@@ -502,7 +502,7 @@ dialog .btn-reservation {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.jpg");
+  background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.webp");
   z-index: 1;
 }
 .header .wrapper {
@@ -1273,7 +1273,7 @@ dialog .btn-reservation {
   .header {
     background-origin: border-box;
     background-repeat: no-repeat;
-    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.jpg");
+    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie-mobile.webp");
     background-position: left;
   }
   .header__text-box__title--training,
@@ -1311,7 +1311,7 @@ dialog .btn-reservation {
 }
 @media (min-width: 768px) {
   .header {
-    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie.jpeg");
+    background-image: url("../img/panda-masaz-ivan-mishchenko-o-mnie.webp");
     background-size: 110%;
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -1481,4 +1481,6 @@ dialog .btn-reservation {
   .footer__info__right {
     align-items: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

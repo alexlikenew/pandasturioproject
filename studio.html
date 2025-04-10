@@ -1,167 +1,183 @@
 <!DOCTYPE html>
 <html lang="pl">
 
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fit Panda || Trening & Masaż">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Panda Studio Team – profesjonalne studio treningowe w Rzeszowie. Treningi personalne, grupowe i funkcjonalne. Zadbaj o formę z doświadczonym trenerem!"
+          name="description">
     <title>FIT Panda Studio Treningu & Masażu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta content="studio treningowe Rzeszów , trener personalny , siłownia Rzeszów , Panda Studio Team , odchudzanie Rzeszów , rehabilitacja ruchowa Rzeszów"
+          name="keywords"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/favicon/site.webmanifest" rel="manifest">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="wrapper">
-            <!-- Navigation -->
-            <div class="navigation">
-                <!-- Logo -->
-                <a href="index.html" class="navigation__logo">
-                    <img class="navigation__logo__panda" src="img/pandastuio_logo_png.png" alt="Logo niedzwiedzia">
-                    <img src="img/pandastudio_logo_text_png.png" alt="Logo FIT">
+<!-- Navigation -->
+<nav class="nav">
+    <div class="wrapper">
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- Logo -->
+            <a class="navigation__logo" href="index.html">
+                <img alt="Logo niedzwiedzia" class="navigation__logo__panda" src="img/pandastuio_logo_png.png">
+                <img alt="Logo FIT" src="img/pandastudio_logo_text_png.png">
+            </a>
+            <!-- Mobile navigation bars -->
+            <button class="burger-btn">
+                <div class="burger-btn__box">
+                    <div class="burger-btn__bars"></div>
+                </div>
+            </button>
+            <!-- Desktop navigation -->
+            <div class="navigation__desktop-menu">
+                <ul class="navigation__desktop-menu__ul">
+                    <li class="current"><span data-dialog="dialogOne">Zarezerwuj</span>
+                    </li>
+                    <li><a href="trening.html" title="Trening">Trening</a></li>
+                    <li><a href="masaz.html" title="Masaż">Masaż</a></li>
+                    <!--                    <li><a href="studio.html" title="Studio">Studio</a></li>-->
+                    <li><a href="contact.html" title="Kontakt">Kontakt</a></li>
+                    <li>
+                        <button aria-label="SPRÓBUJ!" class="text" data-dialog="dialogOne">SPRÓBUJ!</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Mobile navigation -->
+            <div class="navigation__mobile-menu">
+                <ul class="navigation__mobile-menu__ul">
+                    <li class="current"><span data-dialog="dialogOne">Zarezerwuj</span>
+                    </li>
+                    <li><a href="trening.html" title="Trening">Trening</a></li>
+                    <li><a href="masaz.html" title="Masaż">Masaż</a></li>
+                    <!--                    <li><a href="studio.html" title="Studio">Studio</a></li>-->
+                    <li><a href="contact.html" title="Kontakt">Kontakt</a></li>
+                    <li>
+                        <button aria-label="SPRÓBUJ!" class="text" data-dialog="dialogOne">SPRÓBUJ!</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Section Title baner -->
+<section class="title-baner-training">
+    <div>
+        <h1>O nas</h1>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__hr-line--top"></div>
+        <!-- Footer social media -->
+        <div class="footer__social">
+            <div class="footer__social__text">
+                <p>S u b s k r y b u j &nbsp; n a s z e &nbsp; m e d i a </p>
+                <h2>Stay in touch</h2>
+            </div>
+            <div class="footer__social__images">
+                <ul>
+                    <li><a href="https://www.facebook.com/Pandamasaz/">
+                        <svg fill="none"
+                             height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M23.5 7.50098C24.0175 7.50098 24.4375 7.08098 24.4375 6.56348V0.938477C24.4375 0.420977 24.0175 0.000976562 23.5 0.000976562H17.875C14.2562 0.000976562 11.3125 2.94473 11.3125 6.56348V11.251H8.5C7.9825 11.251 7.5625 11.671 7.5625 12.1885V17.8135C7.5625 18.331 7.9825 18.751 8.5 18.751H11.3125V31.0635C11.3125 31.581 11.7325 32.001 12.25 32.001H17.875C18.3925 32.001 18.8125 31.581 18.8125 31.0635V18.751H22.5625C23.0206 18.751 23.4119 18.4197 23.4875 17.9679L24.425 12.3429C24.47 12.071 24.3938 11.7929 24.2156 11.5822C24.0375 11.3722 23.7756 11.251 23.5 11.251H18.8125V7.50098H23.5ZM17.875 13.126H22.3931L21.7681 16.876H17.875C17.3575 16.876 16.9375 17.296 16.9375 17.8135V30.126H13.1875V17.8135C13.1875 17.296 12.7675 16.876 12.25 16.876H9.4375V13.126H12.25C12.7675 13.126 13.1875 12.706 13.1875 12.1885V6.56348C13.1875 3.9791 15.2906 1.87598 17.875 1.87598H22.5625V5.62598H17.875C17.3575 5.62598 16.9375 6.04598 16.9375 6.56348V12.1885C16.9375 12.706 17.3575 13.126 17.875 13.126Z"
+                                    fill="#D7FB00"></path>
+                        </svg>
+                    </a></li>
+                    <!-- <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M18.9893 13.5508L30.6459 0.000976562H27.8837L17.7623 11.7661L9.67835 0.000976562H0.354492L12.579 17.7919L0.354492 32.001H3.11688L13.8053 19.5766L22.3426 32.001H31.6664L18.9887 13.5508H18.9893ZM15.2059 17.9487L13.9673 16.1771L4.11221 2.08045H8.35508L16.3082 13.4569L17.5468 15.2285L27.885 30.0161H23.6421L15.2059 17.9493V17.9487Z"
+                                    fill="#D7FB00"></path>
+                            </svg></a></li> -->
+                    <li><a href="https://www.instagram.com/panda_masaz/">
+                        <svg fill="none"
+                             height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M16.3149 32.0009C16.209 32.0009 16.103 32.0009 15.9963 32.0004C13.488 32.0065 11.1704 31.9428 8.9165 31.8056C6.8501 31.6798 4.96387 30.9657 3.46143 29.7406C2.01172 28.5585 1.02173 26.9601 0.519043 24.9904C0.081543 23.2755 0.0583496 21.5922 0.0361328 19.964C0.0200195 18.7958 0.00341797 17.4115 0 16.0038C0.00341797 14.5902 0.0200195 13.206 0.0361328 12.0378C0.0583496 10.4098 0.081543 8.72647 0.519043 7.01138C1.02173 5.04166 2.01172 3.44327 3.46143 2.26114C4.96387 1.03604 6.8501 0.321932 8.91675 0.196199C11.1707 0.0592364 13.4888 -0.00472845 16.0024 0.00137507C18.5115 -0.00399602 20.8284 0.0592364 23.0823 0.196199C25.1487 0.321932 27.0349 1.03604 28.5373 2.26114C29.9873 3.44327 30.977 5.04166 31.4797 7.01138C31.9172 8.72623 31.9404 10.4098 31.9626 12.0378C31.9788 13.206 31.9956 14.5902 31.9988 15.998V16.0038C31.9956 17.4115 31.9788 18.7958 31.9626 19.964C31.9404 21.5919 31.9175 23.2753 31.4797 24.9904C30.977 26.9601 29.9873 28.5585 28.5373 29.7406C27.0349 30.9657 25.1487 31.6798 23.0823 31.8056C20.9238 31.9369 18.7065 32.0009 16.3149 32.0009ZM15.9963 30.0184C18.4639 30.0243 20.7295 29.9618 22.9304 29.828C24.4929 29.733 26.336 28.7082 27.4459 27.8031C28.4717 26.9665 29.1783 25.8122 29.5457 24.3722C29.91 22.9447 29.931 21.412 29.9512 19.9298C29.9671 18.7694 29.9837 17.3949 29.9871 16.0009C29.9837 14.6066 29.9671 13.2323 29.9512 12.0719C29.931 10.5898 29.91 9.05704 29.5457 7.6293C29.1783 6.18936 28.4717 5.03507 27.4459 4.1984C26.336 3.29361 24.4929 2.29873 22.9304 2.20376C20.7295 2.06973 18.4639 2.00796 16.0022 2.01333C13.5352 2.00747 11.2693 2.07706 9.06836 2.21109C7.50586 2.30606 5.83368 2.97617 4.72382 3.88096C3.69794 4.71763 2.80141 6.18936 2.43397 7.6293C2.06972 9.05704 2.04872 10.5895 2.02846 12.0719C2.01259 13.2333 1.99599 14.6086 1.99257 16.0038C1.99599 17.393 2.01259 18.7685 2.02846 19.9298C2.04872 21.412 2.06972 22.9447 2.43397 24.3722C2.80141 25.8122 3.50795 26.9665 4.53383 27.8031C5.64369 28.7079 7.50586 29.733 9.06836 29.828C11.2693 29.962 13.5356 30.0245 15.9963 30.0184ZM15.9368 23.8134C11.6291 23.8134 8.12427 20.3087 8.12427 16.0009C8.12427 11.693 11.6291 8.18839 15.9368 8.18839C20.2446 8.18839 23.7493 11.693 23.7493 16.0009C23.7493 20.3087 20.2446 23.8134 15.9368 23.8134ZM16.0022 10.0075C12.4896 10.0075 10.0175 12.4795 10.0175 15.998C10.0175 18.9272 12.2325 22.0183 15.9676 22.0183C18.8971 22.0183 21.9427 19.2431 21.9427 15.998C21.9427 13.0688 19.708 10.0075 16.0022 10.0075ZM24.6243 5.68839C23.5889 5.68839 22.7493 6.52774 22.7493 7.56339C22.7493 8.59903 23.5889 9.43839 24.6243 9.43839C25.6599 9.43839 26.4993 8.59903 26.4993 7.56339C26.4993 6.52774 25.6599 5.68839 24.6243 5.68839Z"
+                                    fill="#D7FB00"></path>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__hr-line--bottom"></div>
+        <div class="footer__info">
+            <!-- Footer left -->
+            <div class="footer__info__left">
+                <!-- Logo image -->
+                <a class="navigation__logo" href="#">
+                    <img alt="Logo niedzwiedzia" class="navigation__logo__panda" src="img/pandastuio_logo_png.png">
+                    <img alt="Logo FIT" src="img/pandastudio_logo_text_png.png">
                 </a>
-                <!-- Mobile navigation bars -->
-                <button class="burger-btn">
-                    <div class="burger-btn__box">
-                        <div class="burger-btn__bars"></div>
-                    </div>
-                </button>
-                <!-- Desktop navigation -->
-                <div class="navigation__desktop-menu">
-                    <ul class="navigation__desktop-menu__ul">
-                        <li class="current"><a href="">Zarezerwuj</a>
-                        </li>
-                        <li><a href="trening.html">Trening</a></li>
-                        <li><a href="masaz.html">Masaż</a></li>
-                        <li><a href="studio.html">Studio</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><button class="text">SPRÓBUJ!</button></li>
-                    </ul>
-                </div>
-                <!-- Mobile navigation -->
-                <div class="navigation__mobile-menu">
-                    <ul class="navigation__mobile-menu__ul">
-                        <li><a href="">Zarezerwuj</a>
-                        </li>
-                        <li><a href="trening.html">Trening</a></li>
-                        <li><a href="masaz.html">Masaż</a></li>
-                        <li><a href="studio.html">Studio</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><button class="text">Nacisnij</button></li>
-                    </ul>
-                </div>
+                <!-- Info text -->
+                <p>Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów
+                    się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.</p>
+            </div>
+            <!-- Footer right -->
+            <div class="footer__info__right">
+                <ul class="footer__right__ul">
+                    <li>
+                        <div class="icon-box">
+                            <img alt="Ikonka lokalizacji" src="./img/location-icon.png">
+                        </div>
+                        <div class="text">
+                            <p class="text__title">Address:</p>
+                            <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                                35-242</a></p>
+                            <p class="text__content"><a href="https://g.co/kgs/MBEjdC3">Podkarpacka 12a, Rzeszów, PL
+                                35-082</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-box">
+                            <img alt="Ikonka telefonu" src="./img/phone-icon.png">
+                        </div>
+                        <div class="text">
+                            <p class="text__title">Telefon:</p>
+                            <a class="text__content" href="tel:729729729">729-729-729</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon-box">
+                            <img alt="Ikonka zegarka" src="./img/clock-icon.png">
+                        </div>
+                        <div class="text">
+                            <p class="text__title">Godziny pracy:</p>
+                            <p class="text__content">Pon-Sob: 08:00 - 16:00</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>
+        <br>
+        <p class="footer__rights">@2024 Wszystkie prawa <a href="index.html"> PandaStudioTeam. </a> Design &amp;
+            Developed By alexlikenew</p>
+    </div>
 
-    <!-- Section Title baner -->
-    <section class="title-baner-training">
-        <div>
-            <h1>O nas</h1>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="wrapper">
-            <div class="footer__hr-line--top"></div>
-            <!-- Footer social media -->
-            <div class="footer__social">
-                <div class="footer__social__text">
-                    <p>S u b s k r y b u j &nbsp; n a s z e &nbsp; m e d i a </p>
-                    <h2>Stay in touch</h2>
-                </div>
-                <div class="footer__social__images">
-                    <ul>
-                        <li><a href="https://www.facebook.com/Pandamasaz/"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path
-                                        d="M23.5 7.50098C24.0175 7.50098 24.4375 7.08098 24.4375 6.56348V0.938477C24.4375 0.420977 24.0175 0.000976562 23.5 0.000976562H17.875C14.2562 0.000976562 11.3125 2.94473 11.3125 6.56348V11.251H8.5C7.9825 11.251 7.5625 11.671 7.5625 12.1885V17.8135C7.5625 18.331 7.9825 18.751 8.5 18.751H11.3125V31.0635C11.3125 31.581 11.7325 32.001 12.25 32.001H17.875C18.3925 32.001 18.8125 31.581 18.8125 31.0635V18.751H22.5625C23.0206 18.751 23.4119 18.4197 23.4875 17.9679L24.425 12.3429C24.47 12.071 24.3938 11.7929 24.2156 11.5822C24.0375 11.3722 23.7756 11.251 23.5 11.251H18.8125V7.50098H23.5ZM17.875 13.126H22.3931L21.7681 16.876H17.875C17.3575 16.876 16.9375 17.296 16.9375 17.8135V30.126H13.1875V17.8135C13.1875 17.296 12.7675 16.876 12.25 16.876H9.4375V13.126H12.25C12.7675 13.126 13.1875 12.706 13.1875 12.1885V6.56348C13.1875 3.9791 15.2906 1.87598 17.875 1.87598H22.5625V5.62598H17.875C17.3575 5.62598 16.9375 6.04598 16.9375 6.56348V12.1885C16.9375 12.706 17.3575 13.126 17.875 13.126Z"
-                                        fill="#D7FB00"></path>
-                                </svg></a></li>
-                        <!-- <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                    viewBox="0 0 32 32" fill="none">
-                                    <path
-                                        d="M18.9893 13.5508L30.6459 0.000976562H27.8837L17.7623 11.7661L9.67835 0.000976562H0.354492L12.579 17.7919L0.354492 32.001H3.11688L13.8053 19.5766L22.3426 32.001H31.6664L18.9887 13.5508H18.9893ZM15.2059 17.9487L13.9673 16.1771L4.11221 2.08045H8.35508L16.3082 13.4569L17.5468 15.2285L27.885 30.0161H23.6421L15.2059 17.9493V17.9487Z"
-                                        fill="#D7FB00"></path>
-                                </svg></a></li> -->
-                        <li><a href="https://www.instagram.com/panda_masaz/"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path
-                                        d="M16.3149 32.0009C16.209 32.0009 16.103 32.0009 15.9963 32.0004C13.488 32.0065 11.1704 31.9428 8.9165 31.8056C6.8501 31.6798 4.96387 30.9657 3.46143 29.7406C2.01172 28.5585 1.02173 26.9601 0.519043 24.9904C0.081543 23.2755 0.0583496 21.5922 0.0361328 19.964C0.0200195 18.7958 0.00341797 17.4115 0 16.0038C0.00341797 14.5902 0.0200195 13.206 0.0361328 12.0378C0.0583496 10.4098 0.081543 8.72647 0.519043 7.01138C1.02173 5.04166 2.01172 3.44327 3.46143 2.26114C4.96387 1.03604 6.8501 0.321932 8.91675 0.196199C11.1707 0.0592364 13.4888 -0.00472845 16.0024 0.00137507C18.5115 -0.00399602 20.8284 0.0592364 23.0823 0.196199C25.1487 0.321932 27.0349 1.03604 28.5373 2.26114C29.9873 3.44327 30.977 5.04166 31.4797 7.01138C31.9172 8.72623 31.9404 10.4098 31.9626 12.0378C31.9788 13.206 31.9956 14.5902 31.9988 15.998V16.0038C31.9956 17.4115 31.9788 18.7958 31.9626 19.964C31.9404 21.5919 31.9175 23.2753 31.4797 24.9904C30.977 26.9601 29.9873 28.5585 28.5373 29.7406C27.0349 30.9657 25.1487 31.6798 23.0823 31.8056C20.9238 31.9369 18.7065 32.0009 16.3149 32.0009ZM15.9963 30.0184C18.4639 30.0243 20.7295 29.9618 22.9304 29.828C24.4929 29.733 26.336 28.7082 27.4459 27.8031C28.4717 26.9665 29.1783 25.8122 29.5457 24.3722C29.91 22.9447 29.931 21.412 29.9512 19.9298C29.9671 18.7694 29.9837 17.3949 29.9871 16.0009C29.9837 14.6066 29.9671 13.2323 29.9512 12.0719C29.931 10.5898 29.91 9.05704 29.5457 7.6293C29.1783 6.18936 28.4717 5.03507 27.4459 4.1984C26.336 3.29361 24.4929 2.29873 22.9304 2.20376C20.7295 2.06973 18.4639 2.00796 16.0022 2.01333C13.5352 2.00747 11.2693 2.07706 9.06836 2.21109C7.50586 2.30606 5.83368 2.97617 4.72382 3.88096C3.69794 4.71763 2.80141 6.18936 2.43397 7.6293C2.06972 9.05704 2.04872 10.5895 2.02846 12.0719C2.01259 13.2333 1.99599 14.6086 1.99257 16.0038C1.99599 17.393 2.01259 18.7685 2.02846 19.9298C2.04872 21.412 2.06972 22.9447 2.43397 24.3722C2.80141 25.8122 3.50795 26.9665 4.53383 27.8031C5.64369 28.7079 7.50586 29.733 9.06836 29.828C11.2693 29.962 13.5356 30.0245 15.9963 30.0184ZM15.9368 23.8134C11.6291 23.8134 8.12427 20.3087 8.12427 16.0009C8.12427 11.693 11.6291 8.18839 15.9368 8.18839C20.2446 8.18839 23.7493 11.693 23.7493 16.0009C23.7493 20.3087 20.2446 23.8134 15.9368 23.8134ZM16.0022 10.0075C12.4896 10.0075 10.0175 12.4795 10.0175 15.998C10.0175 18.9272 12.2325 22.0183 15.9676 22.0183C18.8971 22.0183 21.9427 19.2431 21.9427 15.998C21.9427 13.0688 19.708 10.0075 16.0022 10.0075ZM24.6243 5.68839C23.5889 5.68839 22.7493 6.52774 22.7493 7.56339C22.7493 8.59903 23.5889 9.43839 24.6243 9.43839C25.6599 9.43839 26.4993 8.59903 26.4993 7.56339C26.4993 6.52774 25.6599 5.68839 24.6243 5.68839Z"
-                                        fill="#D7FB00"></path>
-                                </svg></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__hr-line--bottom"></div>
-            <div class="footer__info">
-                <!-- Footer left -->
-                <div class="footer__info__left">
-                    <!-- Logo image -->
-                    <a href="#" class="navigation__logo">
-                        <img class="navigation__logo__panda" src="img/pandastuio_logo_png.png" alt="Logo niedzwiedzia">
-                        <img src="img/pandastudio_logo_text_png.png" alt="Logo FIT">
-                    </a>
-                    <!-- Info text -->
-                    <p>Dołącz do naszej społeczności i rozpocznij swoją drogę do lepszego zdrowia i samopoczucia. Umów
-                        się na pierwszą konsultację i dowiedz się, jak możemy Ci pomóc w osiągnięciu Twoich celów.</p>
-                </div>
-                <!-- Footer right -->
-                <div class="footer__info__right">
-                    <ul class="footer__right__ul">
-                        <li>
-                            <div class="icon-box">
-                                <img src="./img/location-icon.png" alt="Ikonka lokalizacji">
-                            </div>
-                            <div class="text">
-                                <p class="text__title">Address:</p>
-                                <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
-                                        35-242</a></p>
-                                <p class="text__content"><a href="https://g.co/kgs/MBEjdC3">Podkarpacka 12a, Rzeszów, PL
-                                        35-082</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <img src="./img/phone-icon.png" alt="Ikonka telefonu">
-                            </div>
-                            <div class="text">
-                                <p class="text__title">Telefon:</p>
-                                <a class="text__content" href="tel:729729729">729-729-729</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <img src="./img/clock-icon.png" alt="Ikonka zegarka">
-                            </div>
-                            <div class="text">
-                                <p class="text__title">Godziny pracy:</p>
-                                <p class="text__content">Pon-Sob: 08:00 - 16:00</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <p class="footer__rights">@2024 Wszystkie prawa <a href="index.html"> PandaStudioTeam. </a> Design &amp;
-                Developed By alexlikenew</p>
-        </div>
-
-    </footer>
-    <script src="./js/script.js"></script>
+</footer>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
