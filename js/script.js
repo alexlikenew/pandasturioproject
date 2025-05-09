@@ -8,23 +8,31 @@
 // preloaderFunc()
 
 const BOOKSY = 'https://booksy.com/pl-pl/17197_panda-masaz_masaz_10729_rzeszow'
+const burgerButton = document.querySelector('#burgerButton');
+const navMobileMenu = document.querySelector('.navigation__mobile-menu');
 // document.querySelector(".btn-redirect-to-booksy").onclick = function () {
 //     location.href = BOOKSY;
 // };
 
 document.querySelectorAll('[data-dialog]').forEach(button => {
-	button.addEventListener('click', () => {
-		console.log('sjkpw')
-		const dialog = document.querySelector(`#${button.dataset.dialog}`)
-		dialog.showModal()
+    button.addEventListener('click', () => {
+        console.log('sjkpw')
+        const dialog = document.querySelector(`#${button.dataset.dialog}`)
+        dialog.showModal()
 
-		document.body.style.overflow = 'hidden'
-		document.documentElement.style.overflow = 'hidden'
+        document.body.style.overflow = 'hidden'
+        document.documentElement.style.overflow = 'hidden'
 
-		dialog.querySelector('.closeDialog').addEventListener('click', () => {
-			dialog.close()
-			document.body.style.removeProperty('overflow')
-			document.documentElement.style.removeProperty('overflow')
-		})
-	})
+        dialog.querySelector('.closeDialog').addEventListener('click', () => {
+            dialog.close()
+            document.body.style.removeProperty('overflow')
+            document.documentElement.style.removeProperty('overflow')
+        })
+    })
 })
+
+burgerButton.addEventListener('click', () => {
+    navMobileMenu.classList.toggle('active');
+})
+
+

@@ -445,7 +445,82 @@ dialog .btn-reservation {
   transition-delay: 0.2s;
 }
 .navigation__mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1200;
+  transform: translateX(-100%);
+  transform-origin: left center;
+  visibility: hidden;
   display: none;
+  width: clamp(270px, 55.102vw, 450px);
+  background-color: #0C0C0D;
+  overflow-y: auto;
+  padding: 30px 15px;
+  opacity: 0;
+  transition: opacity 500ms ease 0ms, visibility 500ms ease 0ms, transform 500ms ease 0ms;
+}
+.navigation__mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.navigation__mobile-menu ul .navigation__logo {
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.navigation__mobile-menu ul li {
+  border-bottom: 1px solid RGBA(255, 255, 255, 0.1);
+}
+.navigation__mobile-menu ul li .navigation__mobile-menu__contact {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.navigation__mobile-menu ul li .navigation__mobile-menu__contact strong {
+  color: #d1fd08;
+}
+.navigation__mobile-menu ul a, .navigation__mobile-menu ul span {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  color: #FAFAFA;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  height: 46px;
+  letter-spacing: 0.8px;
+  align-items: center;
+  transition: 500ms;
+}
+.navigation__mobile-menu ul button {
+  margin-top: 2rem;
+  padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
+  background-color: #d1fd08;
+  background-image: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(16px, 0.938vw, 22px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: relative;
+  border-color: transparent;
+  border-radius: 20px;
+}
+.navigation__mobile-menu.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 500ms ease 500ms, visibility 500ms ease 500ms, transform 500ms ease 500ms;
 }
 
 .burger-btn {
@@ -682,7 +757,7 @@ dialog .btn-reservation {
 .transform-life__box__training a .transform-life__box__training__text-box--massage {
   position: absolute;
   max-width: 70%;
-  z-index: 1000;
+  z-index: 100;
   left: 0;
   top: 0;
   padding: 2rem;
@@ -1107,7 +1182,7 @@ dialog .btn-reservation {
 }
 .contact__form__input-block svg {
   position: absolute;
-  top: 13px;
+  top: 20px;
   right: clamp(16px, 1.25vw, 32px);
 }
 .contact__form button {
@@ -1244,9 +1319,6 @@ dialog .btn-reservation {
   flex-direction: column;
   gap: 0.5rem;
 }
-.footer__info__right ul li .text:hover {
-  color: #d1fd08;
-}
 .footer__info__right ul li .text__title {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -1256,6 +1328,9 @@ dialog .btn-reservation {
 }
 .footer__info__right ul li .text__content {
   color: #92949f;
+}
+.footer__info__right ul li .text__content:hover a {
+  color: #d1fd08;
 }
 .footer__info__right ul li .text__content a {
   color: #92949f;

@@ -41,7 +41,7 @@
                 <img alt="Logo FIT" src="img/pandastudio_logo_text_png.png">
             </a>
             <!-- Mobile navigation bars -->
-            <button class="burger-btn">
+            <button aria-label="Otworz menu" class="burger-btn" id="burgerButton">
                 <div class="burger-btn__box">
                     <div class="burger-btn__bars"></div>
                 </div>
@@ -49,8 +49,8 @@
             <!-- Desktop navigation -->
             <div class="navigation__desktop-menu">
                 <ul class="navigation__desktop-menu__ul">
-                    <li class="current"><a data-dialog="dialogOne" href="contact.html" title="Zarezerwuj">Zarezerwuj</a>
-                    </li>
+                    <li><a href="cennik.html" title="Trening">Cennik</a></li>
+                    <li><a href="blog.html" title="Blog">Blog</a></li>
                     <li><a href="trening.html" title="Trening">Trening</a></li>
                     <li><a href="masaz.html" title="Masaż">Masaż</a></li>
                     <!--                    <li><a href="studio.html" title="Studio">Studio</a></li>-->
@@ -63,8 +63,12 @@
             <!-- Mobile navigation -->
             <div class="navigation__mobile-menu">
                 <ul class="navigation__mobile-menu__ul">
-                    <li class="current"><a data-dialog="dialogOne" href="contact.html" title="Zarezerwuj">Zarezerwuj</a>
-                    </li>
+                    <a class="navigation__logo" href="index.html">
+                        <img alt="Logo niedzwiedzia" class="navigation__logo__panda" src="img/pandastuio_logo_png.png">
+                        <img alt="Logo FIT" src="img/pandastudio_logo_text_png.png">
+                    </a>
+                    <li><a href="cennik.html" title="Trening">Cennik</a></li>
+                    <li><a href="blog.html" title="Blog">Blog</a></li>
                     <li><a href="trening.html" title="Trening">Trening</a></li>
                     <li><a href="masaz.html" title="Masaż">Masaż</a></li>
                     <!--                    <li><a href="studio.html" title="Studio">Studio</a></li>-->
@@ -72,7 +76,24 @@
                     <li>
                         <button aria-label="SPRÓBUJ!" class="text" data-dialog="dialogOne">SPRÓBUJ!</button>
                     </li>
+                    <li><p class="text__content"><a class="navigation__mobile-menu__contact"
+                                                    href="https://g.co/kgs/P3n3EtW"
+                                                    title="Adres"><strong>Treningi:</strong>
+                        Myśliwska 255,
+                        Rzeszów,
+                        PL
+                        35-242</a></p></li>
+                    <li><p class="text__content"><a class="navigation__mobile-menu__contact"
+                                                    href="https://g.co/kgs/MBEjdC3"><strong>Masaże:</strong>
+                        Podkarpacka 12a,
+                        Rzeszów, PL
+                        35-082</a></p></li>
+                    <li><p class="text__content"><a class="navigation__mobile-menu__contact" href="tel:694 906 749"
+                                                    title="694 906 749"><strong>Kontakt:</strong>
+                        +48 694 906 749
+                    </a></p></li>
                 </ul>
+
             </div>
         </div>
     </div>
@@ -97,11 +118,14 @@
                                 <img alt="Ikonka lokalizacji" src="./img/location-icon.png">
                             </div>
                             <div class="text">
-                                <p class="text__title">Address:</p>
-                                <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów,
+                                <p class="text__title">Adres:</p>
+                                <p class="text__content"><a href="https://g.co/kgs/P3n3EtW"><strong>Treningi:</strong>
+                                    Myśliwska 255,
+                                    Rzeszów,
                                     PL
                                     35-242</a></p>
-                                <p class="text__content"><a href="https://g.co/kgs/MBEjdC3">Podkarpacka 12a,
+                                <p class="text__content"><a href="https://g.co/kgs/MBEjdC3"><strong>Masaże:</strong>
+                                    Podkarpacka 12a,
                                     Rzeszów, PL
                                     35-082</a></p>
                             </div>
@@ -112,7 +136,8 @@
                             </div>
                             <div class="text">
                                 <p class="text__title">Telefon:</p>
-                                <a class="text__content" href="tel:729729729">729-729-729</a>
+                                <p class="text__content"><a href="tel:694 906 749" title="694 906 749">694 906 749</a>
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -230,10 +255,15 @@
                             <img alt="Ikonka lokalizacji" src="./img/location-icon.png">
                         </div>
                         <div class="text">
-                            <p class="text__title">Address:</p>
-                            <p class="text__content"><a href="https://g.co/kgs/P3n3EtW">Myśliwska 255, Rzeszów, PL
+                            <p class="text__title">Adres:</p>
+                            <p class="text__content"><a href="https://g.co/kgs/P3n3EtW"><strong>Treningi:</strong>
+                                Myśliwska 255,
+                                Rzeszów,
+                                PL
                                 35-242</a></p>
-                            <p class="text__content"><a href="https://g.co/kgs/MBEjdC3">Podkarpacka 12a, Rzeszów, PL
+                            <p class="text__content"><a href="https://g.co/kgs/MBEjdC3"><strong>Masaże:</strong>
+                                Podkarpacka 12a,
+                                Rzeszów, PL
                                 35-082</a></p>
                         </div>
                     </li>
@@ -243,7 +273,7 @@
                         </div>
                         <div class="text">
                             <p class="text__title">Telefon:</p>
-                            <a class="text__content" href="tel:729729729">729-729-729</a>
+                            <p class="text__content"><a href="tel:694 906 749" title="694 906 749">694 906 749</a></p>
                         </div>
                     </li>
                     <li>
