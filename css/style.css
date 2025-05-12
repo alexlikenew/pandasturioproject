@@ -996,8 +996,10 @@ dialog .btn-reservation {
   transition-delay: 0.2s;
 }
 
-.testimonials--training {
-  padding-top: 10rem;
+@media screen and (max-width: 768px) {
+  .testimonials--training {
+    padding-top: 3rem;
+  }
 }
 .testimonials .wrapper .pricing-section {
   width: 100%;
@@ -1053,7 +1055,8 @@ dialog .btn-reservation {
   vertical-align: middle;
   margin-right: 1rem;
 }
-.testimonials .wrapper .pricing-box button {
+.testimonials .wrapper .pricing-box button, .testimonials .wrapper .pricing-box a {
+  display: block;
   position: relative;
   margin-top: 2rem;
   padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
@@ -1071,21 +1074,21 @@ dialog .btn-reservation {
   border-color: transparent;
   z-index: 1000;
 }
-.testimonials .wrapper .pricing-box button::before, .testimonials .wrapper .pricing-box button::after {
+.testimonials .wrapper .pricing-box button::before, .testimonials .wrapper .pricing-box button::after, .testimonials .wrapper .pricing-box a::before, .testimonials .wrapper .pricing-box a::after {
   height: 100%;
   position: absolute;
   top: 0;
   transition: all 0.3s;
   content: "";
 }
-.testimonials .wrapper .pricing-box button::before {
+.testimonials .wrapper .pricing-box button::before, .testimonials .wrapper .pricing-box a::before {
   width: 100%;
   left: 0;
   border-radius: 20px;
   background-color: #d1fd08;
   z-index: -1;
 }
-.testimonials .wrapper .pricing-box button::after {
+.testimonials .wrapper .pricing-box button::after, .testimonials .wrapper .pricing-box a::after {
   width: 0;
   left: 50%;
   border-top: 1px solid transparent;
@@ -1093,13 +1096,13 @@ dialog .btn-reservation {
   transform: translate(-50%, 0);
   z-index: 1;
 }
-.testimonials .wrapper .pricing-box button:hover {
+.testimonials .wrapper .pricing-box button:hover, .testimonials .wrapper .pricing-box a:hover {
   color: #d1fd08;
 }
-.testimonials .wrapper .pricing-box button:hover::before {
+.testimonials .wrapper .pricing-box button:hover::before, .testimonials .wrapper .pricing-box a:hover::before {
   transform: scale(0, 1);
 }
-.testimonials .wrapper .pricing-box button:hover::after {
+.testimonials .wrapper .pricing-box button:hover::after, .testimonials .wrapper .pricing-box a:hover::after {
   width: 100%;
   border-color: #d1fd08;
   transition-delay: 0.2s;

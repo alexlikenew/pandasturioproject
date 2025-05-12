@@ -456,7 +456,8 @@ dialog .btn-reservation {
 		  height: auto;
 		  gap: 1rem;
 		  padding: 2rem 0;
-		  strong{
+
+		  strong {
 			color: $green-color;
 		  }
 		}
@@ -1085,7 +1086,10 @@ dialog .btn-reservation {
 // SECTION TRAINING{
 .testimonials {
   &--training {
-	padding-top: 10rem;
+	@media screen and (max-width: 768px) {
+	  padding-top: 3rem;
+
+	}
   }
 
   .wrapper {
@@ -1150,7 +1154,8 @@ dialog .btn-reservation {
 		}
 	  }
 
-	  button {
+	  button, a {
+		display: block;
 		position: relative;
 		margin-top: 2rem;
 		padding: clamp(16px, 0.677vw, 30px) clamp(36px, 1.667vw, 66px);
